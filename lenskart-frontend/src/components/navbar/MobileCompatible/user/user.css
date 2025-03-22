@@ -1,0 +1,9 @@
+#user {
+  width: 35px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+
+#user img {
+  width: 100%;
+}

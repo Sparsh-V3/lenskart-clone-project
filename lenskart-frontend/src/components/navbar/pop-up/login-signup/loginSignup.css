@@ -1,0 +1,14 @@
+.login-signup {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 1rem;
+}
+
+.login-signup button {
+  width: 8rem;
+  font-size: 1rem;
+  padding: 0.2rem 0.1rem;
+  color: white;
+  background-color: rgba(35, 9, 90, 0.892);
+  border-radius: 10px;
+}

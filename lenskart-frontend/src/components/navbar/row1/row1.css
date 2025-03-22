@@ -1,0 +1,35 @@
+.row1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  padding: 0 2rem;
+  /* border: 1px solid red; */
+}
+
+.row1 p {
+  flex: 3;
+  /* border: 1px solid black; */
+}
+
+.row1 a {
+  flex: 1;
+  text-align: right;
+  /* border: 1px solid black; */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (Tablets) */
+@media (max-width: 1024px) {
+  .row1 {
+    font-size: 7px;
+  }
+}
+
+/* Small screens (Mobiles) */
+@media screen and (max-width: 768px) {
+  .row1 {
+    display: none;
+  }
+}

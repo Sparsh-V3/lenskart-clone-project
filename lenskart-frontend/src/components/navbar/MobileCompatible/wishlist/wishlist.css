@@ -1,0 +1,9 @@
+.wishlist {
+  /* border: 1px solid black; */
+  width: 30px;
+  display: flex;
+}
+
+.wishlist img {
+  width: 100%;
+}

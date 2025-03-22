@@ -1,0 +1,11 @@
+.addressLoc {
+  font-size: 9px;
+  /* border: 1px solid black; */
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.addressLoc p {
+  margin: 0.2rem 0;
+}

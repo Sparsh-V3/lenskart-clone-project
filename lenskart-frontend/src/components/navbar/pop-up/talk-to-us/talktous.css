@@ -1,0 +1,19 @@
+.talk-to-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid black;
+}
+
+.talk-to-us h4 {
+    margin: .3rem;
+}
+
+.talk-to-us .contact {
+  width: 120px;
+}
+
+.talk-to-us .contact img {
+  width: 100%;
+}
