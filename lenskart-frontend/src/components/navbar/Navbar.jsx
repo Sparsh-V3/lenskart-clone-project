@@ -1,15 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./navbar.css";
-import Eyeglasses from "./row3/eyeglasses/Eyeglasses";
-import Screenglasses from "./row3/screenglasses/Screenglasses";
-import Kidsglasses from "./row3/kidsglasses/Kidsglasses";
-import Contactlenses from "./row3/contactlenses/Contactlenses";
-import Sunglasses from "./row3/sunglasses/Sunglasses";
-import Homeeyetest from "./row3/home-eye-test/Homeeyetest";
-import Storelocator from "./row3/store-locator/Storelocator";
 import Row1 from "./row1/Row1";
 import Row2 from "./row2/Row2";
 import MobileCompatible from "./MobileCompatible/MobileCompatible";
+import Row3 from "./row3/Row3";
 
 function Navbar() {
   const [isDeviceCompatible, setIsDeviceCompatible] = useState(false);
@@ -38,29 +32,8 @@ function Navbar() {
     <nav id="navbar">
       <Row1 />
       <Row2 />
+      <Row3 />
       {isDeviceCompatible && <MobileCompatible />}
-      {/* <div className="row3">
-        <div className="drop-cards">
-          <Eyeglasses />
-          <Screenglasses />
-          <Kidsglasses />
-          <Contactlenses />
-          <Sunglasses />
-          <Homeeyetest />
-          <Storelocator />
-        </div>
-        <div className="linked-images">
-          <div className="img">
-            <img src="3dtryon1.webp" alt="" />
-          </div>
-          <div className="img">
-            <img src="blulogo.webp" alt="" />
-          </div>
-          <div className="img">
-            <img src="gold_max_logo_dc.webp" alt="" />
-          </div>
-        </div>
-      </div> */}
     </nav>
   );
 }

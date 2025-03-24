@@ -1,0 +1,32 @@
+.main-category {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+  border: 1px solid red;
+  margin-top: auto;
+}
+
+.main-category .sub-main-category {
+  border: 1px solid black;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 0.3rem 2rem;
+}
+
+.main-category .sub-main-category div {
+  flex: 1 0;
+}
+
+.main-category .sub-main-category div img {
+  width: 80%;
+}
+
+.main-category .sub-main-category p {
+  font-size: 0.9rem;
+  flex: 2;
+  text-align: center;
+}

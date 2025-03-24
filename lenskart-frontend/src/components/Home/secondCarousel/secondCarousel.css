@@ -1,0 +1,181 @@
+.section2 {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 40px auto;
+  width: 90%;
+  gap: 2rem;
+}
+
+.section2 .title {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  max-width: 300px;
+  min-width: 15px;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.section2 .title p {
+  margin: 5px 0;
+  text-align: right;
+  font-family: serif;
+  font-size: 28px;
+}
+
+.section2 .title p:last-child{
+  font-size: 17px;
+}
+
+.secondCarousel {
+  flex: 3 0;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+}
+
+.secondCarousel .imgSets {
+  display: flex;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+
+.secondCarousel .imgSets .set1 {
+  display: none;
+}
+
+.secondCarousel .imgSets .set1.active {
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 2rem;
+}
+
+.secondCarousel .imgSets .set1.active div {
+  flex: 1;
+  max-width: 200px;
+  min-width: 130px;
+  /* border: 1px solid red; */
+}
+
+.secondCarousel .imgSets .set1.active div img {
+  width: 100%;
+}
+
+.secondCarousel .imgSets .set2 {
+  display: none;
+}
+
+.secondCarousel .imgSets .set2.active {
+  display: flex;
+  padding: 1rem 1rem;
+  gap: 2rem;
+}
+
+.secondCarousel .imgSets .set2.active div {
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.secondCarousel .imgSets .set2.active div img {
+  width: 100%;
+}
+
+.secondCarousel button {
+  background: transparent;
+  width: 60px;
+  border: none;
+}
+
+.secondCarousel button img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .section2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section2 .title {
+    flex-direction: row;
+    max-width: 800px;
+    min-width: 600px;
+    margin: auto;
+    justify-content: center;
+    align-items: end;
+    gap: 8px;
+  }
+
+  .section2 .title p {
+    font-size: 18px;
+  }
+
+  .section2 .title p:last-child {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .secondCarousel .imgSets .set1.active div {
+    max-width: 180px;
+    min-width: 120px;
+  }
+
+  .secondCarousel button {
+    width: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section2 .title {
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: end;
+  }
+
+  .section2 .title p {
+    font-size: 15px;
+  }
+
+  .section2 .title p:last-child {
+    font-size: 13px;
+  }
+
+  .secondCarousel .imgSets {
+    display: flex;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .secondCarousel .imgSets .set1.active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .secondCarousel .imgSets .set2.active {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem 1rem;
+    gap: 1rem;
+  }
+
+  .secondCarousel .imgSets .set1.active div {
+    max-width: 180px;
+    min-width: 120px;
+  }
+
+  .secondCarousel .imgSets .set2.active div {
+    max-width: 180px;
+    min-width: 120px;
+  }
+}

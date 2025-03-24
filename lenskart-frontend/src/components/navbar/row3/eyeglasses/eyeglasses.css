@@ -1,0 +1,11 @@
+.eyeglasses-container {
+    position: relative;
+}
+
+.eyeglasses-container .hovered-container {
+    border-bottom: 3px solid red;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 29px;
+}
