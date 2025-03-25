@@ -5,12 +5,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 function FirstCarousel() {
   return (
     <Carousel
-    infiniteLoop={true} 
-    autoPlay={true} 
-    emulateTouch={true} 
-    showStatus={false} 
-    showThumbs={false} 
-    stopOnHover={false}
+      infiniteLoop={true}
+      autoPlay={true}
+      emulateTouch={true}
+      showStatus={false}
+      showThumbs={false}
+      stopOnHover={false}
     >
       <div>
         <img src="carousel_1.webp" />

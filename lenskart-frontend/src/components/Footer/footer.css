@@ -1,0 +1,125 @@
+#lenskart-footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #000042;
+  padding: 1rem 3rem;
+}
+
+#lenskart-footer .footer-rest {
+  display: flex;
+  justify-content: space-between;
+}
+
+#lenskart-footer .footer-rest .footer-extras {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid white; */
+}
+
+.footer-extras div {
+  /* border: 1px solid red; */
+  max-width: 300px;
+  min-width: 200px;
+}
+
+.footer-extras div ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.apps {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  padding: .5rem;
+  gap: 1rem;
+}
+
+.apps .apps-links {
+  display: flex;
+  /* border: 1px solid yellow; */
+  padding: 2px 1px;
+  gap: 5px;
+  align-items: center;
+  flex: 1;
+}
+
+.apps .apps-links div {
+  /* border: 1px solid white; */
+  display: flex;
+  flex: 1;
+  height: 65px;
+}
+
+.apps .apps-links div img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.apps .extra-others {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid yellow; */
+  align-items: center;
+}
+
+.extra-others p {
+  font-size: .8rem;
+  margin: 3px;
+}
+
+.line {
+  border: 2px solid white;
+  margin-top: 3.5rem;
+}
+
+@media (max-width: 1024px) {
+  #lenskart-footer h1 {
+    font-size: 28px;
+  }
+
+  #lenskart-footer p {
+    font-size: 13px;
+  }
+
+  .footer-extras div {
+    font-size: 13px;
+    min-width: 150px;
+  }
+  .apps .apps-links {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    min-width: 65px;
+  }
+}
+
+@media (max-width: 768px) {
+  #lenskart-footer h1 {
+    font-size: 23px;
+  }
+
+  #lenskart-footer .footer-rest {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #lenskart-footer .footer-rest .footer-extras {
+    /* border: 1px solid white; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-extras div {
+    font-size: 12px;
+  }
+
+  #lenskart-footer .footer-rest .footer-extras {
+    flex-direction: column;
+  }
+}
