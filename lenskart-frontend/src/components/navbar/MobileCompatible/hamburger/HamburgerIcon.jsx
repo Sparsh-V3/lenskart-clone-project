@@ -1,5 +1,5 @@
-import React, { use, useState } from "react";
-import "./HamburgerIcon.css";
+import React, { useState } from "react";
+import "./hamburgerIcon.css";
 import Popup from "../../pop-up/Popup";
 
 function HamburgerIcon() {
