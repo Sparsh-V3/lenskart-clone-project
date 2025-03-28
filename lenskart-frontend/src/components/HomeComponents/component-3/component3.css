@@ -1,0 +1,72 @@
+.home-component-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.home-component-3 .component-3-heading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* border: 1px solid red; */
+  padding: 0 3rem;
+  align-items: center;
+  justify-content: center;
+  width: 85%;
+}
+
+.home-component-3 .component-3-heading h1 {
+  font-family: serif;
+  font-size: 2.8rem;
+  /* border: 1px solid red; */
+  padding: 0.3rem 1rem;
+  background-color: white;
+  z-index: 1;
+}
+
+.home-component-3 .component-3-heading .component-3-line {
+  border-bottom: 1px solid grey;
+  position: absolute;
+  width: 100%;
+}
+
+.home-component-3 .home-component-3-image {
+  width: 100%;
+}
+
+.home-component-3 .home-component-3-image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .home-component-3 .component-3-heading {
+    width: 75%;
+  }
+
+  .home-component-3 .component-3-heading h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-component-3 .home-component-3-image {
+    width: 98%;
+    height: 200px;
+    border-radius: 13px;
+    overflow: clip;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-component-3 .component-3-heading {
+    width: 65%;
+  }
+
+  .home-component-3 .component-3-heading h1 {
+    font-size: 15px;
+  }
+
+  .home-component-3 .home-component-3-image {
+    height: 130px;
+  }
+}

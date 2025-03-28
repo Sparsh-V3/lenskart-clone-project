@@ -1,0 +1,72 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  width: 400px;
+  padding: 2rem 1rem;
+}
+
+.signup-container * {
+  box-sizing: border-box;
+}
+
+.signup-container .signup-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.signup-container .signup-heading h1 {
+  margin: 2px;
+}
+
+.signup-container .signup-heading .close-btn {
+  border: none;
+  color: black;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.signup-container .inputs {
+  width: 100%;
+  padding: 1rem;
+}
+
+.signup-container .inputs input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Chrome, Safari, Edge */
+  margin: 0;
+}
+
+#signup {
+  width: 70%;
+  background-color: #00b5a5;
+  color: white;
+  margin: auto;
+  padding: 1rem 3rem;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.have-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+
+.have-account .login-link {
+  color: blue;
+}
