@@ -25,7 +25,7 @@ const signup = async (req, res) => {
     res.cookie("authToken", token, {
       httpOnly: true,
       secure: true, // true in production, false in development
-      sameSite: "none",
+      sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000, // Expires in 1 day
     });
 
@@ -60,7 +60,7 @@ const login = async (req, res) => {
     res.cookie("authToken", token, {
       httpOnly: true,
       secure: true, // true in production, false in development
-      sameSite: "none",
+      sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000, // Expires in 1 day
     });
 
