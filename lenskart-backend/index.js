@@ -11,7 +11,10 @@ const port = Number(process.env.PORT_NUMBER) || 8080;
 // CORS Configuration
 app.use(
   cors({
-    origin: "http://localhost:5173", // Allow frontend URL
+    origin: [
+      "http://localhost:5173",
+      "https://lenskart-clone-project.vercel.app",
+    ], // Allow frontend URL
     methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
     credentials: true,
