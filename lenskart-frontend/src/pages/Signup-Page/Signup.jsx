@@ -18,7 +18,7 @@ function Signup({ closeModalSignup, openLogin }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://localhost:8080/api/users/signup", {
+      const response = await fetch("https://lenskart-clone-project.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

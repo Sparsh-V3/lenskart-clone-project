@@ -24,8 +24,8 @@ const signup = async (req, res) => {
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
       httpOnly: true,
-      secure: false, // true in production, false in development
-      sameSite: "Lax",
+      secure: true, // true in production, false in development
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000, // Expires in 1 day
     });
 
@@ -59,8 +59,8 @@ const login = async (req, res) => {
     // Set token in HTTP-only cookie
     res.cookie("authToken", token, {
       httpOnly: true,
-      secure: false, // true in production, false in development
-      sameSite: "Lax",
+      secure: true, // true in production, false in development
+      sameSite: "none",
       maxAge: 24 * 60 * 60 * 1000, // Expires in 1 day
     });
 
