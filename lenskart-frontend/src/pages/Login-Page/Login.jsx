@@ -15,7 +15,7 @@ function Login({ closeModalLogin }) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("https://lenskart-clone-project.onrender.com", {
+      const response = await fetch("https://lenskart-clone-project.onrender.com/api/users/login", {
         method: "POST",
         credentials: "include", // Ensures cookies are sent and received
         headers: { "Content-Type": "application/json" },
